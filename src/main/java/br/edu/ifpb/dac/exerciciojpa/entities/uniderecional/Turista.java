@@ -1,5 +1,4 @@
-
-package br.edu.ifpb.dac.exerciciojpa.entities.bidirecional;
+package br.edu.ifpb.dac.exerciciojpa.entities.uniderecional;
 
 import java.util.Date;
 
@@ -15,28 +14,27 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-
-@Entity(name = "Turista_BI")
+@Entity(name = "Turista_UNI")
 @Table(name = "TB_TURISTA")
 public class Turista {
-	
+
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	@Id
 	private Long id;
-	
+
 	@Column
 	private String nome;
-	
+
 	@Column(name = "sobre_nome")
 	private String sobreNome;
-	
+
 	@Column(name = "data_nascimento")
 	@Temporal(TemporalType.DATE)
 	private Date dataNascimento;
-	
+
 	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	private Passaporte passaporte;
-	
+
 	public Turista() {
 	}
 
@@ -134,7 +132,5 @@ public class Turista {
 		return "Turista [id=" + id + ", nome=" + nome + ", sobreNome=" + sobreNome + ", dataNascimento="
 				+ dataNascimento + ", passaporte=" + passaporte + "]";
 	}
-	
-	
 
 }

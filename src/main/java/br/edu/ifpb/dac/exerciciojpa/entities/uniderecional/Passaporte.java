@@ -1,42 +1,34 @@
-package br.edu.ifpb.dac.exerciciojpa.entities.bidirecional;
+package br.edu.ifpb.dac.exerciciojpa.entities.uniderecional;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-@Entity(name = "Passaporte_BI")
+@Entity (name = "Passaporte_UNI")
 @Table(name = "TB_PASSAPORTE")
 public class Passaporte {
-
+	
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@GeneratedValue (strategy = GenerationType.SEQUENCE)
 	private Long id;
-
+	
 	@Column
 	private Integer numero;
-
+	
 	@Column
 	private String endereco;
-
+	
 	@Column
 	private String estado;
-
+	
 	@Column
 	private String pais;
-
+	
 	@Column
 	private String dono;
-	
-	@OneToOne(mappedBy = "passaporte")
-	private Turista turista;
-	
-	public Passaporte() {
-		
-	}
 
 	public Long getId() {
 		return id;
@@ -86,14 +78,6 @@ public class Passaporte {
 		this.dono = dono;
 	}
 
-	public Turista getTurista() {
-		return turista;
-	}
-
-	public void setTurista(Turista turista) {
-		this.turista = turista;
-	}
-
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -104,7 +88,6 @@ public class Passaporte {
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + ((numero == null) ? 0 : numero.hashCode());
 		result = prime * result + ((pais == null) ? 0 : pais.hashCode());
-		result = prime * result + ((turista == null) ? 0 : turista.hashCode());
 		return result;
 	}
 
@@ -147,23 +130,16 @@ public class Passaporte {
 				return false;
 		} else if (!pais.equals(other.pais))
 			return false;
-		if (turista == null) {
-			if (other.turista != null)
-				return false;
-		} else if (!turista.equals(other.turista))
-			return false;
 		return true;
 	}
 
 	@Override
 	public String toString() {
 		return "Passaporte [id=" + id + ", numero=" + numero + ", endereco=" + endereco + ", estado=" + estado
-				+ ", pais=" + pais + ", dono=" + dono +"]";
+				+ ", pais=" + pais + ", dono=" + dono + "]";
 	}
-	
-	
-	
 	
 	
 
 }
+
