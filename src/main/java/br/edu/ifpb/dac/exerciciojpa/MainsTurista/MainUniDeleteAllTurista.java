@@ -1,4 +1,4 @@
-package br.edu.ifpb.dac.exerciciojpa;
+package br.edu.ifpb.dac.exerciciojpa.MainsTurista;
 
 import java.util.List;
 

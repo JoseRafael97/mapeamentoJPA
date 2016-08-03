@@ -1,3 +1,5 @@
+package br.edu.ifpb.dac.exerciciojpa.MainsTurista;
+
 import java.util.List;
 
 import br.edu.ifpb.dac.exerciciojpa.dao.unidirecional.TuristaDAO;

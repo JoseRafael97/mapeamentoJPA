@@ -1,4 +1,4 @@
-package br.edu.ifpb.dac.exerciciojpa;
+package br.edu.ifpb.dac.exerciciojpa.MainsTurista;
 
 import br.edu.ifpb.dac.exerciciojpa.dao.bidirecional.TuristaDAO;
 import br.edu.ifpb.dac.exerciciojpa.entities.bidirecional.Passaporte;

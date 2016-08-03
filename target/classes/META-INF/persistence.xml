@@ -7,6 +7,10 @@
 		<class>br.edu.ifpb.dac.exerciciojpa.entities.bidirecional.Turista</class>
 		<class>br.edu.ifpb.dac.exerciciojpa.entities.uniderecional.Turista</class>
 		<class>br.edu.ifpb.dac.exerciciojpa.entities.uniderecional.Passaporte</class>
+		<class>br.edu.ifpb.dac.exerciciojpa.entities.uniderecional.Departamento</class>
+		<class>br.edu.ifpb.dac.exerciciojpa.entities.uniderecional.Empregado</class>
+		<class>br.edu.ifpb.dac.exerciciojpa.entities.uniderecional.Chamada</class>
+		<class>br.edu.ifpb.dac.exerciciojpa.entities.uniderecional.Celular</class>
 
 		<properties>
 
