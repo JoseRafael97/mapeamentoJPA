@@ -1,4 +1,4 @@
-package dao;
+package br.edu.ifpb.dac.exerciciojpa.dao;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
