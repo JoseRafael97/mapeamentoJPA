@@ -8,6 +8,7 @@ import br.edu.ifpb.dac.exerciciojpa.exceptions.ExercicioJpaPersistenceException;
 public class MainUniDeleteAllCelular {
 	 
 	public static void main(String[] args) {
+		
 		CelularDAO celularDAO = new CelularDAO();
 
 		try {

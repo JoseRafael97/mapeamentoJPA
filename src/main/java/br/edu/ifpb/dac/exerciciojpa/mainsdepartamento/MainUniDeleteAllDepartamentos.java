@@ -1,8 +1,9 @@
-package br.edu.ifpb.dac.exerciciojpa;
+package br.edu.ifpb.dac.exerciciojpa.mainsdepartamento;
 
 import br.edu.ifpb.dac.exerciciojpa.dao.unidirecional.DepartamentoDAO;
 import br.edu.ifpb.dac.exerciciojpa.dao.unidirecional.EmpregadoDAO;
 import br.edu.ifpb.dac.exerciciojpa.entities.uniderecional.Departamento;
+import br.edu.ifpb.dac.exerciciojpa.entities.uniderecional.Empregado;
 import br.edu.ifpb.dac.exerciciojpa.exceptions.ExercicioJpaPersistenceException;
 
 public class MainUniDeleteAllDepartamentos {
@@ -16,6 +17,13 @@ public class MainUniDeleteAllDepartamentos {
 			for(Departamento d : departamentoDAO.findAll()){
 				departamentoDAO.remove(d);
 			}
+			
+			///apagar todos os empregados
+			
+			for(Empregado e : empregadoDAO.findAll()){
+				empregadoDAO.remove(e);
+			}
+			
 		} catch (ExercicioJpaPersistenceException e) {
 
 			e.printStackTrace();

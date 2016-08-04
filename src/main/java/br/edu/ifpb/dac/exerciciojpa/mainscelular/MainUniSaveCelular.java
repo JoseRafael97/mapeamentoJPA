@@ -43,9 +43,6 @@ public class MainUniSaveCelular {
 			System.out.println("Depois de Salvar: "+celular);
 
 			
-			
-
-			
 		} catch (ExercicioJpaPersistenceException e) {
 
 			e.printStackTrace();

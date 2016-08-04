@@ -11,6 +11,17 @@
 		<class>br.edu.ifpb.dac.exerciciojpa.entities.uniderecional.Empregado</class>
 		<class>br.edu.ifpb.dac.exerciciojpa.entities.uniderecional.Chamada</class>
 		<class>br.edu.ifpb.dac.exerciciojpa.entities.uniderecional.Celular</class>
+		<class>br.edu.ifpb.dac.exerciciojpa.entities.bidirecional.Empregado</class>
+		<class>br.edu.ifpb.dac.exerciciojpa.entities.bidirecional.Departamento</class>
+		<class>br.edu.ifpb.dac.exerciciojpa.entities.bidirecional.Chamada</class>
+		<class>br.edu.ifpb.dac.exerciciojpa.entities.bidirecional.Celular</class>
+		<class>br.edu.ifpb.dac.exerciciojpa.entities.uniderecional.Comentario</class>
+		<class>br.edu.ifpb.dac.exerciciojpa.entities.uniderecional.Postagem</class>
+		<class>br.edu.ifpb.dac.exerciciojpa.entities.bidirecional.Comentario</class>
+		<class>br.edu.ifpb.dac.exerciciojpa.entities.bidirecional.Postagem</class>
+		<class>br.edu.ifpb.dac.exerciciojpa.entities.uniderecional.Funcionario</class>
+		<class>br.edu.ifpb.dac.exerciciojpa.entities.uniderecional.Colaborador</class>
+		<class>br.edu.ifpb.dac.exerciciojpa.entities.uniderecional.Projeto</class>
 
 		<properties>
 

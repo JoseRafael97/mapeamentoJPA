@@ -87,7 +87,7 @@ public class DepartamentoDAO extends DAO implements GenericDAO<Departamento, Lon
 		EntityManager em = getEntityManager();
 		List<Departamento> departamentos = null;
 		try {
-			TypedQuery<Departamento> query = em.createQuery("SELECT d FROM Departamento d", Departamento.class);
+			TypedQuery<Departamento> query = em.createQuery("SELECT d FROM Departamento_UNI d", Departamento.class);
 			departamentos = query.getResultList();
 		} catch (PersistenceException pe) {
 			pe.printStackTrace();

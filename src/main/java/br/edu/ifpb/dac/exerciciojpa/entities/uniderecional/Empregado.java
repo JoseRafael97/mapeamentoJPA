@@ -3,19 +3,17 @@ package br.edu.ifpb.dac.exerciciojpa.entities.uniderecional;
 import java.math.BigDecimal;
 import java.util.Date;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-@Entity(name = "Gerente_UNI")
-@Table(name = "TB_GERENTE")
+@Entity(name = "Empregado_UNI")
+@Table(name = "TB_EMPREGADO")
 public class Empregado {
 	
 	@Id
@@ -34,9 +32,7 @@ public class Empregado {
 	
 	@Column
 	private BigDecimal salario;
-	
-	@OneToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
-	private Departamento gerencia;
+
 	
 	public Empregado() {
 		// TODO Auto-generated constructor stub
@@ -82,20 +78,11 @@ public class Empregado {
 		this.salario = salario;
 	}
 
-	public Departamento getGerencia() {
-		return gerencia;
-	}
-
-	public void setGerencia(Departamento gerencia) {
-		this.gerencia = gerencia;
-	}
-
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((dataNascimento == null) ? 0 : dataNascimento.hashCode());
-		result = prime * result + ((gerencia == null) ? 0 : gerencia.hashCode());
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
 		result = prime * result + ((salario == null) ? 0 : salario.hashCode());
@@ -116,11 +103,6 @@ public class Empregado {
 			if (other.dataNascimento != null)
 				return false;
 		} else if (!dataNascimento.equals(other.dataNascimento))
-			return false;
-		if (gerencia == null) {
-			if (other.gerencia != null)
-				return false;
-		} else if (!gerencia.equals(other.gerencia))
 			return false;
 		if (id == null) {
 			if (other.id != null)
@@ -148,10 +130,11 @@ public class Empregado {
 	@Override
 	public String toString() {
 		return "Empregado [id=" + id + ", nome=" + nome + ", sobreNome=" + sobreNome + ", dataNascimento="
-				+ dataNascimento + ", salario=" + salario + ", gerencia=" + gerencia + "]";
+				+ dataNascimento + ", salario=" + salario + "]";
 	}
+
 	
-	
+
 	
 	
 
