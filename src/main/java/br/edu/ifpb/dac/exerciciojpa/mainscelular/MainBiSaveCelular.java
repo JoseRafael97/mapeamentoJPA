@@ -19,17 +19,17 @@ public class MainBiSaveCelular {
 
 			Celular celular = new Celular();
 			celular.setCodPais(55);
-			celular.setDdd(83);
+			celular.setDdd(97);
 			celular.setNumero(1223432428);
 
 			List<Chamada> list = new ArrayList<>();
 
 			Chamada cha1 = new Chamada();
-			cha1.setDuracao(402);
+			cha1.setDuracao(100);
 			cha1.setHoraInicio(new Date());
 
 			Chamada cha2 = new Chamada();
-			cha2.setDuracao(21);
+			cha2.setDuracao(600);
 			cha2.setHoraInicio(new Date());
 
 			cha1.setCelular(celular);

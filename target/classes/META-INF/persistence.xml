@@ -22,6 +22,12 @@
 		<class>br.edu.ifpb.dac.exerciciojpa.entities.uniderecional.Funcionario</class>
 		<class>br.edu.ifpb.dac.exerciciojpa.entities.uniderecional.Colaborador</class>
 		<class>br.edu.ifpb.dac.exerciciojpa.entities.uniderecional.Projeto</class>
+		<class>br.edu.ifpb.dac.exerciciojpa.entities.bidirecional.Colaborador</class>
+		<class>br.edu.ifpb.dac.exerciciojpa.entities.bidirecional.Projeto</class>
+		<class>br.edu.ifpb.dac.exerciciojpa.entities.uniderecional.Livro</class>
+		<class>br.edu.ifpb.dac.exerciciojpa.entities.uniderecional.Autor</class>
+		<class>br.edu.ifpb.dac.exerciciojpa.entities.bidirecional.Autor</class>
+		<class>br.edu.ifpb.dac.exerciciojpa.entities.bidirecional.Livro</class>
 
 		<properties>
 

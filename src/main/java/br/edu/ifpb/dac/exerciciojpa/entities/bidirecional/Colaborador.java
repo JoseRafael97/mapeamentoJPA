@@ -1,4 +1,4 @@
-package br.edu.ifpb.dac.exerciciojpa.entities.uniderecional;
+package br.edu.ifpb.dac.exerciciojpa.entities.bidirecional;
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -14,7 +14,7 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
-@Entity(name = "Colaborador_UNI")
+@Entity(name = "Colaborador_BI")
 @Table(name = "TB_COLABORADOR")
 public class Colaborador {
 

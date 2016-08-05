@@ -1,13 +1,15 @@
-package br.edu.ifpb.dac.exerciciojpa.entities.uniderecional;
+package br.edu.ifpb.dac.exerciciojpa.entities.bidirecional;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
-@Entity(name = "Projeto_UNI")
+@Entity(name = "Projeto_BI")
 @Table (name = "TB_PROJETO")
 public class Projeto {
 	
@@ -20,6 +22,18 @@ public class Projeto {
 	
 	@Column
 	private Integer duracao;
+	
+	@ManyToMany(mappedBy = "projetosTrabalha")
+	private List<Colaborador> integrantes;
+	
+
+	public List<Colaborador> getIntegrantes() {
+		return integrantes;
+	}
+
+	public void setIntegrantes(List<Colaborador> integrantes) {
+		this.integrantes = integrantes;
+	}
 
 	public Long getId() {
 		return id;
