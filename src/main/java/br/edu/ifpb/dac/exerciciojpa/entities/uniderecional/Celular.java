@@ -9,7 +9,8 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity(name = "Celular_UNI")
@@ -29,7 +30,8 @@ public class Celular {
 	@Column
 	private Integer numero;
 
-	@ManyToMany(fetch=FetchType.EAGER,cascade = CascadeType.ALL)
+	@OneToMany(fetch=FetchType.EAGER,cascade = CascadeType.ALL)
+	@JoinColumn(name = "CELULAR_FK")
 	private List<Chamada> chamadas;
 
 	public Celular() {
